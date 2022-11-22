@@ -22,3 +22,48 @@ time, mark, audio, video {
 
 /* --------- Begin your CSS Below here --------- */
 
+:root {
+	  --primary-color: 24, 66%, 0%;
+  --secondary-color: 175, 20%,45%;
+  --l: 50%;
+  --tertiary-color: 0, 0%, 20%;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+
+
+h1, h2, h3, h4, h5, h6, p, input, button, span, div, body, textarea {
+	font-family: 'Poppins', sans-serif;
+}
+
+button {
+	height: 45px;
+	border: none;
+	min-width: 125px;
+	font-size: 22px;
+	border-radius: 35px;
+}
+
+.blue-btn {
+	--color: hsl(var(--secondary-color));
+	background-color: var(--color);
+	color: white;
+}
+
+.orange-btn {
+	--color: hsl(var(--primary-color), var(--l));
+	background-color: var(--color);
+	color: white;
+}
+.App {
+	position: relative;
+	top: 0;
+	min-height: 100vh;
+}
+
+main {
+	padding-bottom: 200px;
+}

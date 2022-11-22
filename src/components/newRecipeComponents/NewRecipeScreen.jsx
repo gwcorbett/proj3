@@ -31,6 +31,15 @@ const NewRecipeScreen = () => {
     console.log(values);
   };
 
+  axios.post(`https://recipes.devmountain.com/recipes`, initialValues).then((res) => {
+    console.log(res.data);
+  })
+  .catch((err) => {
+    console.log(err);
+    });
+    
+
+
   const ingredientDisplay = ingredients.map((ingredient) => {
     return (
       <li>
