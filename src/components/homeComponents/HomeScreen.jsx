@@ -1,6 +1,7 @@
 import AdBanner from './AdBanner'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import RecipeContainer from './RecipeContainer'
 
 
   const HomeScreen = () => {  
@@ -21,6 +22,7 @@ import React, { useEffect, useState } from 'react'
       return (
         <div>
           <AdBanner />
+          <RecipeContainer recipes={recipes} />
         </div>
     )}
   

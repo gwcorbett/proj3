@@ -5,23 +5,24 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeScreen from "./components/homeComponents/HomeScreen";
 import NewRecipeScreen from "./components/newRecipeComponents/NewRecipeScreen";
 import DetailScreen from "./components/detailComponents/DetailScreen";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 
 
 function App() {
   return (
-    <BrowserRouter>
     <div className="App">
       <Header />
+      <main>
       <Routes>
         <Route index element={<HomeScreen />} />
         <Route path="newRecipe" element={<NewRecipeScreen />} />
         <Route path="recipe/:id" element={<DetailScreen />} />
       </Routes>
-      {/* This is where you will code for some of Part 1. */}
+      </main>
       <Footer />
     </div>
-    </BrowserRouter>
   );
 }
 
